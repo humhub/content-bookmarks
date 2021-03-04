@@ -10,8 +10,6 @@ namespace humhub\modules\content_bookmarks;
 use humhub\modules\content\components\ContentActiveRecord;
 use humhub\modules\content\models\Content;
 use humhub\modules\content_bookmarks\models\BookmarkableContent;
-use humhub\modules\content_bookmarks\models\ContentBookmark;
-use Yii;
 
 class Module extends \humhub\components\Module
 {

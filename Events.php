@@ -18,6 +18,10 @@ class Events
 {
     public static function onWallEntryControlsInit($event)
     {
+        if (Yii::$app->user->isGuest) {
+            return;
+        }
+
         /* @var WallEntryControls $wallEntryControls */
         $wallEntryControls = $event->sender;
         $wallEntryControls->addWidget(BookmarkLink::class, ['record' => $wallEntryControls->object], ['sortOrder' => 450]);
