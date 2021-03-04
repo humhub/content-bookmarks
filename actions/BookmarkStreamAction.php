@@ -26,7 +26,7 @@ class BookmarkStreamAction extends ContentContainerStream
      */
     protected function beforeRun()
     {
-        if(!$this->contentContainer instanceof User) {
+        if (!($this->contentContainer instanceof User)) {
             return false;
         }
 

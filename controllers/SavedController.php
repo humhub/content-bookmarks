@@ -10,6 +10,8 @@ namespace humhub\modules\content_bookmarks\controllers;
 use humhub\components\access\ControllerAccess;
 use humhub\modules\content\components\ContentContainerController;
 use humhub\modules\content_bookmarks\actions\BookmarkStreamAction;
+use humhub\modules\user\models\User;
+use Yii;
 
 class SavedController extends ContentContainerController
 {
@@ -38,6 +40,10 @@ class SavedController extends ContentContainerController
 
     public function actionIndex()
     {
+        if (!($this->contentContainer instanceof User) || $this->contentContainer->id != Yii::$app->user->id) {
+            $this->forbidden();
+        }
+
         return $this->render('index', [
             'user' => $this->contentContainer,
         ]);

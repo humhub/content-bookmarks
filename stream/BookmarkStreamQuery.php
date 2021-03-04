@@ -8,6 +8,9 @@
 namespace humhub\modules\content_bookmarks\stream;
 
 use humhub\modules\stream\models\ContentContainerStreamQuery;
+use humhub\modules\stream\models\filters\ContentContainerStreamFilter;
+use humhub\modules\content_bookmarks\stream\filters\BookmarkStreamFilter;
+use Yii;
 
 /**
  * BookmarkStreamQuery
@@ -21,7 +24,8 @@ class BookmarkStreamQuery extends ContentContainerStreamQuery
     public function beforeApplyFilters()
     {
         parent::beforeApplyFilters();
-
-        // TODO: Filter only saved/bookmarked contents
+        $this->removeFilterHandler(ContentContainerStreamFilter::class);
+        $this->addFilterHandler(new BookmarkStreamFilter(['user' => Yii::$app->user]));
     }
+
 }
