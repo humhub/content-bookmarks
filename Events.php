@@ -33,7 +33,7 @@ class Events
             return;
         }
 
-        if (empty($event->sender->user)) {
+        if (empty($event->sender->user) || $event->sender->user->id != Yii::$app->user->id) {
             return;
         }
 
