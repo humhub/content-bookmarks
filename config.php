@@ -7,6 +7,8 @@
 
 use humhub\modules\content\widgets\WallEntryControls;
 use humhub\modules\content_bookmarks\Events;
+use humhub\modules\stream\models\WallStreamQuery;
+use humhub\modules\stream\widgets\WallStreamFilterNavigation;
 use humhub\modules\user\widgets\ProfileMenu;
 
 /** @noinspection MissedFieldInspection */
@@ -17,5 +19,7 @@ return [
     'events' => [
         ['class' => WallEntryControls::class, 'event' => WallEntryControls::EVENT_INIT, 'callback' => [Events::class, 'onWallEntryControlsInit']],
         ['class' => ProfileMenu::class, 'event' => ProfileMenu::EVENT_INIT, 'callback' => [Events::class, 'onProfileMenuInit']],
+        ['class' => WallStreamFilterNavigation::class, 'event' =>  WallStreamFilterNavigation::EVENT_BEFORE_RUN, 'callback' => [Events::class, 'onStreamFilterBeforeRun']],
+        ['class' => WallStreamQuery::class, 'event' =>  WallStreamQuery::EVENT_BEFORE_FILTER, 'callback' => [Events::class, 'onStreamFilterBeforeFilter']],
     ]
 ];
