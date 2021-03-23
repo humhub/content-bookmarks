@@ -17,7 +17,7 @@ class m210303_111425_initial extends Migration
             'content_id' => $this->integer(),
         ]);
         $this->addPrimaryKey('pk_content_bookmarks', 'content_bookmark', 'user_id,content_id');
-        $this->addForeignKey('fk_content_bookmarks_user_id', 'content_bookmark', 'user_id', 'content', 'id', 'CASCADE');
+        $this->addForeignKey('fk_content_bookmarks_user_id', 'content_bookmark', 'user_id', 'user', 'id', 'CASCADE');
         $this->addForeignKey('fk_content_bookmarks_news_id', 'content_bookmark', 'content_id', 'content', 'id', 'CASCADE');
     }
 
