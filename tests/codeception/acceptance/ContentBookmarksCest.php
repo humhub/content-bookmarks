@@ -7,7 +7,7 @@
 
 namespace contentBookmarks\acceptance;
 
-use content_bookmarks\AcceptanceTester;
+use contentBookmarks\AcceptanceTester;
 
 class ContentBookmarksCest
 {
