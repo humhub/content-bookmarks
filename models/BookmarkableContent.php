@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\models;
+namespace humhub\modules\contentBookmarks\models;
 
 use humhub\modules\content\models\Content;
 use Yii;

@@ -5,11 +5,11 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\stream;
+namespace humhub\modules\contentBookmarks\stream;
 
 use humhub\modules\stream\models\ContentContainerStreamQuery;
 use humhub\modules\stream\models\filters\ContentContainerStreamFilter;
-use humhub\modules\content_bookmarks\stream\filters\BookmarkStreamFilter;
+use humhub\modules\contentBookmarks\stream\filters\BookmarkStreamFilter;
 use Yii;
 
 /**

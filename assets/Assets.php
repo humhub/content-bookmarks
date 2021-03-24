@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\assets;
+namespace humhub\modules\contentBookmarks\assets;
 
 use humhub\components\assets\AssetBundle;
 use yii\web\View;
@@ -15,13 +15,13 @@ class Assets extends AssetBundle
     /**
      * @inheritDoc
      */
-    public $sourcePath = '@content_bookmarks/resources';
+    public $sourcePath = '@content-bookmarks/resources';
 
     /**
      * @inheritDoc
      */
     public $js = [
-        'js/humhub.content_bookmarks.js',
+        'js/humhub.content-bookmarks.js',
     ];
 
     /**

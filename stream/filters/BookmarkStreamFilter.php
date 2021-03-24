@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\stream\filters;
+namespace humhub\modules\contentBookmarks\stream\filters;
 
 use humhub\modules\content\models\Content;
 use humhub\modules\space\models\Space;
