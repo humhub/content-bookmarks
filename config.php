@@ -13,7 +13,7 @@ use humhub\modules\user\widgets\ProfileMenu;
 
 /** @noinspection MissedFieldInspection */
 return [
-    'id' => 'content_bookmarks',
+    'id' => 'content-bookmarks',
     'class' => 'humhub\modules\contentBookmarks\Module',
     'namespace' => 'humhub\modules\contentBookmarks',
     'events' => [

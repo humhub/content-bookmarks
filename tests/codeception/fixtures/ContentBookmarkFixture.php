@@ -13,5 +13,5 @@ use yii\test\ActiveFixture;
 class ContentBookmarkFixture extends ActiveFixture
 {
     public $modelClass = Group::class;
-    public $dataFile = '@content_bookmarks/tests/codeception/fixtures/data/content_bookmark.php';
+    public $dataFile = '@content-bookmarks/tests/codeception/fixtures/data/content_bookmark.php';
 }

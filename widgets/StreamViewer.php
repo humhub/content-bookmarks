@@ -19,7 +19,7 @@ class StreamViewer extends BaseStreamViewer
     /**
      * @var string the path to Stream Action to use
      */
-    public $streamAction = '/content_bookmarks/saved/stream';
+    public $streamAction = '/content-bookmarks/saved/stream';
 
     /**
      * @inheritdoc

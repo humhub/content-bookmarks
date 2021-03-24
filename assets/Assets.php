@@ -15,7 +15,7 @@ class Assets extends AssetBundle
     /**
      * @inheritDoc
      */
-    public $sourcePath = '@content_bookmarks/resources';
+    public $sourcePath = '@content-bookmarks/resources';
 
     /**
      * @inheritDoc

@@ -1,5 +1,5 @@
 {
-    "id": "content_bookmarks",
+    "id": "content-bookmarks",
     "name": "Content bookmarks",
     "description": "Allows users to bookmark content and access it from their profile.",
     "keywords": ["content bookmarks"],

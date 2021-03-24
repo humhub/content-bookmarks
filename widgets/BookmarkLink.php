@@ -32,7 +32,7 @@ class BookmarkLink extends WallEntryControlLink
         Assets::register($this->getView());
 
         /* @var Module $module */
-        $module = Yii::$app->getModule('content_bookmarks');
+        $module = Yii::$app->getModule('content-bookmarks');
 
         if ($module->isBookmarkedRecord($this->record)) {
             $this->label = Yii::t('ContentBookmarksModule.base', 'Remove from bookmarks');

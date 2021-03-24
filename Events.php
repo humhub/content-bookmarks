@@ -48,13 +48,13 @@ class Events
             'url' => Url::toSavedContent($event->sender->user),
             'icon' => 'bookmark',
             'sortOrder' => 250,
-            'isActive' => MenuLink::isActiveState('content_bookmarks', 'saved'),
+            'isActive' => MenuLink::isActiveState('content-bookmarks', 'saved'),
         ]));
     }
 
     public static function onStreamFilterBeforeRun($event)
     {
-        if (Yii::$app->controller->module->id == 'content_bookmarks' &&
+        if (Yii::$app->controller->module->id == 'content-bookmarks' &&
             Yii::$app->controller->id == 'saved' &&
             Yii::$app->controller->action->id == 'index') {
             // Don't display the filter on the page with already filtered contents

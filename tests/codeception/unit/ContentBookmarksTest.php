@@ -35,7 +35,7 @@ class ContentBookmarksTest extends HumHubDbTestCase
      */
     protected function setUp()
     {
-        $this->module = Yii::$app->getModule('content_bookmarks');
+        $this->module = Yii::$app->getModule('content-bookmarks');
         $this->post = Post::findOne(['id' => 1]);
         $this->content = BookmarkableContent::findOne(['id' => $this->post->content->id]);
     }

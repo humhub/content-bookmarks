@@ -3,7 +3,7 @@
  * @copyright Copyright (c) 2021 HumHub GmbH & Co. KG
  * @license https://www.humhub.com/licences
  */
-humhub.module('content_bookmarks', function (module, require, $) {
+humhub.module('content-bookmarks', function (module, require, $) {
     var client = require('client');
     var streamEntry = require('stream.StreamEntry');
 
