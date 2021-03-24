@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\helpers;
+namespace humhub\modules\contentBookmarks\helpers;
 
 use humhub\modules\content\models\Content;
 use humhub\modules\user\models\User;

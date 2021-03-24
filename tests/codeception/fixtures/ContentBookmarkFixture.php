@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\tests\codeception\fixtures;
+namespace humhub\modules\contentBookmarks\tests\codeception\fixtures;
 
 use humhub\modules\user\models\Group;
 use yii\test\ActiveFixture;

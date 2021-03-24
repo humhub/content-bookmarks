@@ -5,11 +5,11 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\controllers;
+namespace humhub\modules\contentBookmarks\controllers;
 
 use humhub\components\access\ControllerAccess;
 use humhub\modules\content\components\ContentContainerController;
-use humhub\modules\content_bookmarks\models\BookmarkableContent;
+use humhub\modules\contentBookmarks\models\BookmarkableContent;
 use Yii;
 use yii\web\HttpException;
 

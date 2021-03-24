@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\assets;
+namespace humhub\modules\contentBookmarks\assets;
 
 use humhub\components\assets\AssetBundle;
 use yii\web\View;

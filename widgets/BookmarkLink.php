@@ -5,13 +5,13 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\widgets;
+namespace humhub\modules\contentBookmarks\widgets;
 
 use humhub\modules\content\components\ContentActiveRecord;
 use humhub\modules\content\widgets\WallEntryControlLink;
-use humhub\modules\content_bookmarks\assets\Assets;
-use humhub\modules\content_bookmarks\helpers\Url;
-use humhub\modules\content_bookmarks\Module;
+use humhub\modules\contentBookmarks\assets\Assets;
+use humhub\modules\contentBookmarks\helpers\Url;
+use humhub\modules\contentBookmarks\Module;
 use Yii;
 
 /**

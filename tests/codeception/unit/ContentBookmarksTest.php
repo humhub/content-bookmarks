@@ -5,10 +5,10 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace content_bookmarks;
+namespace contentBookmarks;
 
-use humhub\modules\content_bookmarks\models\BookmarkableContent;
-use humhub\modules\content_bookmarks\Module;
+use humhub\modules\contentBookmarks\models\BookmarkableContent;
+use humhub\modules\contentBookmarks\Module;
 use humhub\modules\post\models\Post;
 use tests\codeception\_support\HumHubDbTestCase;
 use Yii;

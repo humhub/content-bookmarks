@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks\widgets;
+namespace humhub\modules\contentBookmarks\widgets;
 
 use humhub\modules\stream\widgets\StreamViewer as BaseStreamViewer;
 use Yii;

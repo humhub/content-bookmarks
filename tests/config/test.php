@@ -9,6 +9,6 @@ return [
     'modules' => ['content_bookmarks'],
     'fixtures' => [
         'default',
-        'content_bookmark' => 'humhub\modules\content_bookmarks\tests\codeception\fixtures\ContentBookmarkFixture',
+        'content_bookmark' => 'humhub\modules\contentBookmarks\tests\codeception\fixtures\ContentBookmarkFixture',
     ]
 ];

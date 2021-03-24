@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace content_bookmarks\acceptance;
+namespace contentBookmarks\acceptance;
 
 use content_bookmarks\AcceptanceTester;
 

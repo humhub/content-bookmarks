@@ -5,12 +5,12 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\content_bookmarks;
+namespace humhub\modules\contentBookmarks;
 
 use humhub\modules\content\widgets\WallEntryControls;
-use humhub\modules\content_bookmarks\helpers\Url;
-use humhub\modules\content_bookmarks\models\filters\BookmarksContentStreamFilter;
-use humhub\modules\content_bookmarks\widgets\BookmarkLink;
+use humhub\modules\contentBookmarks\helpers\Url;
+use humhub\modules\contentBookmarks\models\filters\BookmarksContentStreamFilter;
+use humhub\modules\contentBookmarks\widgets\BookmarkLink;
 use humhub\modules\stream\models\WallStreamQuery;
 use humhub\modules\stream\widgets\WallStreamFilterNavigation;
 use humhub\modules\ui\menu\MenuLink;
