@@ -1,10 +1,13 @@
 {
-    "id": "content-bookmarks",
-    "name": "Content bookmarks",
-    "description": "Allows users to bookmark content and access it from their profile.",
-    "keywords": ["content bookmarks"],
-    "version": "1.0.0",
-    "humhub": {
-        "minVersion": "1.8"
-    }
+  "id": "content-bookmarks",
+  "name": "Content bookmarks",
+  "description": "Allows users to bookmark content and access it from their profile.",
+  "keywords": [
+    "content bookmarks"
+  ],
+  "version": "1.0.0",
+  "humhub": {
+    "minVersion": "1.8"
+  },
+  "homepage": "https://github.com/humhub/content-bookmarks"
 }
