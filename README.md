@@ -1,1 +1,0 @@
-# humhub-modules-content-bookmarks
