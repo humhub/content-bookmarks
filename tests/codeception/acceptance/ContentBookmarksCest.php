@@ -19,10 +19,10 @@ class ContentBookmarksCest
         $I->amGoingTo('save a Post to bookmark');
         $I->amOnSpace1();
         $I->waitForText('User 3 Space 1 Post Public');
-        $I->clickWallEntryBookmark('Save to bookmark');
+        $I->clickWallEntryBookmark('Save as bookmark');
 
         $I->amOnProfile();
-        $I->click('Saved Content');
+        $I->click('Bookmarks');
 
         $I->amGoingTo('remove a Post to bookmarks');
         $I->waitForText('User 3 Space 1 Post Public');

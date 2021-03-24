@@ -3,7 +3,7 @@
     "name": "Content bookmarks",
     "description": "Bookmarks for content.",
     "keywords": ["content bookmarks"],
-    "version": "0.0.1",
+    "version": "1.0.0",
     "humhub": {
         "minVersion": "1.8"
     }

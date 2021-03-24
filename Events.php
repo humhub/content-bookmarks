@@ -44,7 +44,7 @@ class Events
         $profileMenu = $event->sender;
 
         $profileMenu->addEntry(new MenuLink([
-            'label' => Yii::t('ContentBookmarksModule.base', 'Saved Content'),
+            'label' => Yii::t('ContentBookmarksModule.base', 'Bookmarks'),
             'url' => Url::toSavedContent($event->sender->user),
             'icon' => 'bookmark',
             'sortOrder' => 250,
