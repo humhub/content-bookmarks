@@ -1,7 +1,7 @@
 {
     "id": "content_bookmarks",
     "name": "Content bookmarks",
-    "description": "Bookmarks for content.",
+    "description": "Allows users to bookmark content and access it from their profile.",
     "keywords": ["content bookmarks"],
     "version": "1.0.0",
     "humhub": {
