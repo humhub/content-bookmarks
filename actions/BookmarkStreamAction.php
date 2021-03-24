@@ -5,9 +5,9 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\contentBookmarks\actions;
+namespace humhub\modules\content_bookmarks\actions;
 
-use humhub\modules\contentBookmarks\stream\BookmarkStreamQuery;
+use humhub\modules\content_bookmarks\stream\BookmarkStreamQuery;
 use humhub\modules\stream\actions\ContentContainerStream;
 use humhub\modules\user\models\User;
 

@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\contentBookmarks\models;
+namespace humhub\modules\content_bookmarks\models;
 
 use humhub\components\ActiveRecord;
 

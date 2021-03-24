@@ -5,12 +5,12 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\contentBookmarks;
+namespace humhub\modules\content_bookmarks;
 
 use humhub\modules\content\widgets\WallEntryControls;
-use humhub\modules\contentBookmarks\helpers\Url;
-use humhub\modules\contentBookmarks\models\filters\BookmarksContentStreamFilter;
-use humhub\modules\contentBookmarks\widgets\BookmarkLink;
+use humhub\modules\content_bookmarks\helpers\Url;
+use humhub\modules\content_bookmarks\models\filters\BookmarksContentStreamFilter;
+use humhub\modules\content_bookmarks\widgets\BookmarkLink;
 use humhub\modules\stream\models\WallStreamQuery;
 use humhub\modules\stream\widgets\WallStreamFilterNavigation;
 use humhub\modules\ui\menu\MenuLink;
@@ -48,13 +48,13 @@ class Events
             'url' => Url::toSavedContent($event->sender->user),
             'icon' => 'bookmark',
             'sortOrder' => 250,
-            'isActive' => MenuLink::isActiveState('content-bookmarks', 'saved'),
+            'isActive' => MenuLink::isActiveState('content_bookmarks', 'saved'),
         ]));
     }
 
     public static function onStreamFilterBeforeRun($event)
     {
-        if (Yii::$app->controller->module->id == 'content-bookmarks' &&
+        if (Yii::$app->controller->module->id == 'content_bookmarks' &&
             Yii::$app->controller->id == 'saved' &&
             Yii::$app->controller->action->id == 'index') {
             // Don't display the filter on the page with already filtered contents

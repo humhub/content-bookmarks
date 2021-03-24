@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\contentBookmarks\models\filters;
+namespace humhub\modules\content_bookmarks\models\filters;
 
 use humhub\modules\stream\models\filters\StreamQueryFilter;
 use Yii;

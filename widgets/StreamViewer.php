@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\contentBookmarks\widgets;
+namespace humhub\modules\content_bookmarks\widgets;
 
 use humhub\modules\stream\widgets\StreamViewer as BaseStreamViewer;
 use Yii;
@@ -19,7 +19,7 @@ class StreamViewer extends BaseStreamViewer
     /**
      * @var string the path to Stream Action to use
      */
-    public $streamAction = '/content-bookmarks/saved/stream';
+    public $streamAction = '/content_bookmarks/saved/stream';
 
     /**
      * @inheritdoc

@@ -5,11 +5,11 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\contentBookmarks\controllers;
+namespace humhub\modules\content_bookmarks\controllers;
 
 use humhub\components\access\ControllerAccess;
 use humhub\modules\content\components\ContentContainerController;
-use humhub\modules\contentBookmarks\actions\BookmarkStreamAction;
+use humhub\modules\content_bookmarks\actions\BookmarkStreamAction;
 use humhub\modules\user\models\User;
 use Yii;
 

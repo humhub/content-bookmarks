@@ -1,5 +1,5 @@
 actor: Tester
-namespace: content-bookmarks
+namespace: content_bookmarks
 bootstrap: _bootstrap.php
 settings:
     suite_class: \PHPUnit_Framework_TestSuite

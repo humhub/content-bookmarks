@@ -5,7 +5,7 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace contentBookmarks;
+namespace content_bookmarks;
 
 /**
  * Inherited Methods

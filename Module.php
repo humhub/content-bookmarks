@@ -5,11 +5,11 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace humhub\modules\contentBookmarks;
+namespace humhub\modules\content_bookmarks;
 
 use humhub\modules\content\components\ContentActiveRecord;
 use humhub\modules\content\models\Content;
-use humhub\modules\contentBookmarks\models\BookmarkableContent;
+use humhub\modules\content_bookmarks\models\BookmarkableContent;
 
 class Module extends \humhub\components\Module
 {

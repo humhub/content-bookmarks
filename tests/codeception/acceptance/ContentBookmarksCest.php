@@ -5,9 +5,9 @@
  * @license https://www.humhub.com/licences
  */
 
-namespace contentBookmarks\acceptance;
+namespace content_bookmarks\acceptance;
 
-use content-bookmarks\AcceptanceTester;
+use content_bookmarks\AcceptanceTester;
 
 class ContentBookmarksCest
 {
