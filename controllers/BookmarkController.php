@@ -35,17 +35,17 @@ class BookmarkController extends ContentContainerController
         $content = BookmarkableContent::findOne(['id' => $id]);
 
         if (!$content) {
-            throw new HttpException(404, Yii::t('ContentModule.base', 'Invalid content id given!'));
+            throw new HttpException(404, Yii::t('ContentBookmarkModule.base', 'Invalid content id given!'));
         }
 
         if ($content->bookmark()) {
             if ($content->isBookmarked()) {
-                $this->getView()->success(Yii::t('ContentModule.base', 'Content successfully bookmarked. You can access it directly from your profile.'));
+                $this->getView()->success(Yii::t('ContentBookmarkModule.base', 'Content successfully bookmarked. You can access it directly from your profile.'));
             } else {
-                $this->getView()->info(Yii::t('ContentModule.base', 'Content successfully removed from bookmarks.'));
+                $this->getView()->info(Yii::t('ContentBookmarkModule.base', 'Content successfully removed from bookmarks.'));
             }
         } else {
-            $this->getView()->error(Yii::t('ContentModule.base', 'You cannot bookmark this content!'));
+            $this->getView()->error(Yii::t('ContentBookmarkModule.base', 'You cannot bookmark this content!'));
         }
     }
 }
