@@ -40,12 +40,12 @@ class BookmarkController extends ContentContainerController
 
         if ($content->bookmark()) {
             if ($content->isBookmarked()) {
-                $this->getView()->success(Yii::t('ContentBookmarkModule.base', 'Content successfully bookmarked. You can access it directly from your profile.'));
+                $this->getView()->success(Yii::t('ContentBookmarksModule.base', 'Content successfully bookmarked. You can access it directly from your profile.'));
             } else {
-                $this->getView()->info(Yii::t('ContentBookmarkModule.base', 'Content successfully removed from bookmarks.'));
+                $this->getView()->info(Yii::t('ContentBookmarksModule.base', 'Content successfully removed from bookmarks.'));
             }
         } else {
-            $this->getView()->error(Yii::t('ContentBookmarkModule.base', 'You cannot bookmark this content!'));
+            $this->getView()->error(Yii::t('ContentBookmarksModule.base', 'You cannot bookmark this content!'));
         }
     }
 }
