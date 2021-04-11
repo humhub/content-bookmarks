@@ -1,8 +1,7 @@
 <?php
-
-return [
-    'Bookmarked' => '',
-    'Bookmarks' => '',
-    'Remove from bookmarks' => '',
-    'Save as bookmark' => '',
-];
+return array (
+  'Bookmarked' => 'Segnalibro aggiunto',
+  'Bookmarks' => 'Segnalibri',
+  'Remove from bookmarks' => 'Rimuovi dai segnalibri',
+  'Save as bookmark' => 'Aggiungi segnalibro',
+);

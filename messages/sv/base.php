@@ -1,8 +1,7 @@
 <?php
-
-return [
-    'Bookmarked' => '',
-    'Bookmarks' => '',
-    'Remove from bookmarks' => '',
-    'Save as bookmark' => '',
-];
+return array (
+  'Bookmarked' => 'Bokmärkt',
+  'Bookmarks' => 'Bokmärken',
+  'Remove from bookmarks' => 'Ta bort bokmärke',
+  'Save as bookmark' => 'Spara som bokmärke',
+);
