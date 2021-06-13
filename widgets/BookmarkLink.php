@@ -29,6 +29,10 @@ class BookmarkLink extends WallEntryControlLink
 
     public function init()
     {
+        if ($this->record->content->getContainer() === null) {
+            return '';
+        }
+        
         Assets::register($this->getView());
 
         /* @var Module $module */
