@@ -16,6 +16,7 @@ use humhub\modules\stream\widgets\WallStreamFilterNavigation;
 use humhub\modules\ui\menu\MenuLink;
 use humhub\modules\user\widgets\ProfileMenu;
 use Yii;
+use humhub\modules\content\components\ContentActiveRecord;
 
 class Events
 {
@@ -27,7 +28,12 @@ class Events
 
         /* @var WallEntryControls $wallEntryControls */
         $wallEntryControls = $event->sender;
-        $wallEntryControls->addWidget(BookmarkLink::class, ['record' => $wallEntryControls->object], ['sortOrder' => 450]);
+        
+        /** @var ContentActiveRecord $record */
+        $record = $wallEntryControls->object;
+        if ($record->content->getContainer() !== null) {
+            $wallEntryControls->addWidget(BookmarkLink::class, ['record' => $record], ['sortOrder' => 450]);
+        }
     }
 
     public static function onProfileMenuInit($event)
