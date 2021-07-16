@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.2 (Unreleased)
+---------------------
+- Fix: Translation category for 'You didn\'t save any content yet!'
+- Enh: Improvement and addition of French translations
+
+
 1.0.1 (June 13, 2021)
 ---------------------
 - Enh #5: Display status messages on add/remove bookmarks
