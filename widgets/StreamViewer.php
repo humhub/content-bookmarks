@@ -28,7 +28,7 @@ class StreamViewer extends BaseStreamViewer
     {
         parent::init();
 
-        $this->messageStreamEmpty = '<b>' . Yii::t('UserModule.profile', 'You didn\'t save any content yet!') . '</b>';
+        $this->messageStreamEmpty = '<b>' . Yii::t('ContentBookmarksModule.base', 'You didn\'t save any content yet!') . '</b>';
     }
 
 }

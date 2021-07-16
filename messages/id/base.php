@@ -9,4 +9,5 @@ return [
     'Remove from bookmarks' => '',
     'Save as bookmark' => '',
     'You cannot bookmark this content!' => '',
+    'You didn\'t save any content yet!' => '',
 ];
