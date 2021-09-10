@@ -2,7 +2,7 @@
 
 return [
     'Bookmarked' => 'Ajouté aux marque-pages',
-    'Bookmarks' => 'marque-pages',
+    'Bookmarks' => 'Marque-pages',
     'Invalid content id given!' => 'ID de contenu incorrect.',
     'Remove from bookmarks' => 'Retirer des marque-pages',
     'Save as bookmark' => 'Ajouter au marque-pages',
