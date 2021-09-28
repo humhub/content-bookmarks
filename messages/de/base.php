@@ -9,5 +9,5 @@ return [
     'Remove from bookmarks' => 'Lesezeichen entfernen',
     'Save as bookmark' => 'Lesezeichen setzen',
     'You cannot bookmark this content!' => 'Dieser Inhalt kann nicht mit einem Lesezeichen versehen werden!',
-    'You didn\'t save any content yet!' => '',
+    'You didn\'t save any content yet!' => 'Du hast noch keine Inhalte gespeichert.',
 ];
