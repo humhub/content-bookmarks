@@ -6,6 +6,7 @@ Changelog
 - Fix: Translation category for 'You didn\'t save any content yet!'
 - Enh: Improvement and addition of French translations
 - Enh #23: Tests for `next` version
+- Fix #24: Fix visibility of the method `Controller::getAccessRules()`
 
 
 1.0.1 (June 13, 2021)
