@@ -13,9 +13,6 @@ use humhub\modules\contentBookmarks\models\BookmarkableContent;
 
 class Module extends \humhub\components\Module
 {
-    
-    public $resourcesPath = 'resources';
-    
     /**
      * @param ContentActiveRecord $record
      * @return bool
