@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.1.0 (Unreleased)
+---------------------
+- Fix #26: Update module resources path
+
 1.0.2 (Unreleased)
 ---------------------
 - Fix: Translation category for 'You didn\'t save any content yet!'
