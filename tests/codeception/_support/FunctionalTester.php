@@ -25,7 +25,7 @@ namespace contentBookmarks;
 class FunctionalTester extends \FunctionalTester
 {
     use _generated\FunctionalTesterActions;
-    
+
     /**
     * Define custom actions here
     */

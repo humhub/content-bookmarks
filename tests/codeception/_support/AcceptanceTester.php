@@ -33,7 +33,8 @@ class AcceptanceTester extends \AcceptanceTester
     /**
      * @param string $waitBookmarkButtonText
      */
-    public function clickWallEntryBookmark($waitBookmarkButtonText) {
+    public function clickWallEntryBookmark($waitBookmarkButtonText)
+    {
         $this->jsClick('[data-stream-entry=1] [data-toggle=dropdown]');
         $this->waitForText($waitBookmarkButtonText);
         $this->jsClick('[data-stream-entry=1] [data-action-click=bookmark]');

@@ -15,7 +15,6 @@ use Yii;
  */
 class StreamViewer extends BaseStreamViewer
 {
-
     /**
      * @var string the path to Stream Action to use
      */

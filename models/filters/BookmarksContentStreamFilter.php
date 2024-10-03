@@ -12,8 +12,7 @@ use Yii;
 
 class BookmarksContentStreamFilter extends StreamQueryFilter
 {
-
-    const FILTER_BOOKMARKED = 'entry_bookmarked';
+    public const FILTER_BOOKMARKED = 'entry_bookmarked';
 
     /**
      * Array of stream filters to apply to the query.
@@ -31,7 +30,7 @@ class BookmarksContentStreamFilter extends StreamQueryFilter
     public function rules()
     {
         return [
-            [['filters'], 'safe']
+            [['filters'], 'safe'],
         ];
     }
 

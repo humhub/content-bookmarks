@@ -17,7 +17,6 @@ use Yii;
  */
 class BookmarkStreamQuery extends ContentContainerStreamQuery
 {
-
     /**
      * @inheritdoc
      */

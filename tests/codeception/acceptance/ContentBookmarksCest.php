@@ -11,7 +11,6 @@ use contentBookmarks\AcceptanceTester;
 
 class ContentBookmarksCest
 {
-
     public function testBookmarkPostByRegisteredUser(AcceptanceTester $I)
     {
         $I->amUser1();

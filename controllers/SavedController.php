@@ -33,7 +33,7 @@ class SavedController extends ContentContainerController
         return [
             'stream' => [
                 'class' => BookmarkStreamAction::class,
-                'contentContainer' => $this->contentContainer
+                'contentContainer' => $this->contentContainer,
             ],
         ];
     }
