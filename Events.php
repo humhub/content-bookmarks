@@ -28,7 +28,7 @@ class Events
 
         /* @var WallEntryControls $wallEntryControls */
         $wallEntryControls = $event->sender;
-        
+
         /** @var ContentActiveRecord $record */
         $record = $wallEntryControls->object;
         if ($record->content->getContainer() !== null) {
@@ -73,7 +73,7 @@ class Events
         $wallFilterNavigation->addFilter([
             'id' => BookmarksContentStreamFilter::FILTER_BOOKMARKED,
             'title' =>  Yii::t('ContentBookmarksModule.base', 'Bookmarked'),
-            'sortOrder' => 250
+            'sortOrder' => 250,
         ], WallStreamFilterNavigation::FILTER_BLOCK_BASIC);
     }
 

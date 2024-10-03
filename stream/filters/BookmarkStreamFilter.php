@@ -40,17 +40,17 @@ class BookmarkStreamFilter extends StreamQueryFilter
         // Limit to public posts when no member
         if (Yii::$app->user->isGuest) {
             $this->query->andWhere('content.visibility = :visibility', [':visibility' => Content::VISIBILITY_PUBLIC]);
-        } else if (!Yii::$app->user->getIdentity()->canViewAllContent()) {
+        } elseif (!Yii::$app->user->getIdentity()->canViewAllContent()) {
             // Limit only if current User/Admin cannot view all content
             $this->query->andWhere('content.visibility = :visibility' .
                 ' OR content.created_by = :userId' .
                 ' OR (contentcontainer.class = :spaceClass AND contentcontainer.pk IN (SELECT space_id FROM space_membership WHERE user_id = :userId))' .
                 ' OR (contentcontainer.class = :userClass AND contentcontainer.pk IN (SELECT user_id FROM user_friendship WHERE friend_user_id = :userId))', [
-                ':visibility' => Content::VISIBILITY_PUBLIC,
-                ':userId' => $this->user->id,
-                ':spaceClass' => Space::class,
-                ':userClass' => User::class,
-            ]);
+                    ':visibility' => Content::VISIBILITY_PUBLIC,
+                    ':userId' => $this->user->id,
+                    ':spaceClass' => Space::class,
+                    ':userClass' => User::class,
+                ]);
         }
     }
 }

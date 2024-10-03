@@ -13,8 +13,8 @@ use yii\helpers\Url as BaseUrl;
 
 class Url extends BaseUrl
 {
-    const ROUTE_BOOKMARK_CONTENT = '/content-bookmarks/bookmark/update';
-    const ROUTE_SAVED_CONTENT = '/content-bookmarks/saved';
+    public const ROUTE_BOOKMARK_CONTENT = '/content-bookmarks/bookmark/update';
+    public const ROUTE_SAVED_CONTENT = '/content-bookmarks/saved';
 
     public static function toContent($route, Content $content)
     {

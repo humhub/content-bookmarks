@@ -21,7 +21,6 @@ use Yii;
  */
 class BookmarkLink extends WallEntryControlLink
 {
-
     /**
      * @var ContentActiveRecord
      */
@@ -32,7 +31,7 @@ class BookmarkLink extends WallEntryControlLink
         if ($this->record->content->getContainer() === null) {
             return '';
         }
-        
+
         Assets::register($this->getView());
 
         /* @var Module $module */

@@ -10,5 +10,5 @@ return [
     'fixtures' => [
         'default',
         'content_bookmark' => 'humhub\modules\contentBookmarks\tests\codeception\fixtures\ContentBookmarkFixture',
-    ]
+    ],
 ];

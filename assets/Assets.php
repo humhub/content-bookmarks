@@ -33,6 +33,6 @@ class Assets extends AssetBundle
      * @inheritDoc
      */
     public $publishOptions = [
-        'forceCopy' => true
+        'forceCopy' => true,
     ];
 }
