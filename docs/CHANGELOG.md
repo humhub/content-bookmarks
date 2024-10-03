@@ -7,6 +7,7 @@ Changelog
 - Enh: Improvement and addition of French translations
 - Enh #23: Tests for `next` version
 - Fix #24: Fix visibility of the method `Controller::getAccessRules()`
+- Enh #27: Use PHP CS Fixer
 
 
 1.0.1 (June 13, 2021)
