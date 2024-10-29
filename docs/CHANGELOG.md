@@ -8,6 +8,7 @@ Changelog
 - Enh #23: Tests for `next` version
 - Fix #24: Fix visibility of the method `Controller::getAccessRules()`
 - Enh #27: Use PHP CS Fixer
+- Fix #28: Exclude top ordered records(Pin, Draft, Scheduled, Unread News) from bookmarked list
 
 
 1.0.1 (June 13, 2021)
