@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.2 (Unreleased)
+1.1.0 (Unreleased)
 ---------------------
 - Fix: Translation category for 'You didn\'t save any content yet!'
 - Enh: Improvement and addition of French translations
