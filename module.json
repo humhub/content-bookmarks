@@ -5,9 +5,9 @@
   "keywords": [
     "content","bookmarks"
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "humhub": {
-    "minVersion": "1.14"
+    "minVersion": "1.18"
   },
   "screenshots": [
       "resources/screenshot1.png",
