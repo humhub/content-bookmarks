@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.humhub.org/
  * @copyright Copyright (c) 2021 HumHub GmbH & Co. KG
@@ -42,10 +43,10 @@ class BookmarkStreamFilter extends StreamQueryFilter
             $this->query->andWhere('content.visibility = :visibility', [':visibility' => Content::VISIBILITY_PUBLIC]);
         } elseif (!Yii::$app->user->getIdentity()->canViewAllContent()) {
             // Limit only if current User/Admin cannot view all content
-            $this->query->andWhere('content.visibility = :visibility' .
-                ' OR content.created_by = :userId' .
-                ' OR (contentcontainer.class = :spaceClass AND contentcontainer.pk IN (SELECT space_id FROM space_membership WHERE user_id = :userId))' .
-                ' OR (contentcontainer.class = :userClass AND contentcontainer.pk IN (SELECT user_id FROM user_friendship WHERE friend_user_id = :userId))', [
+            $this->query->andWhere('content.visibility = :visibility'
+                . ' OR content.created_by = :userId'
+                . ' OR (contentcontainer.class = :spaceClass AND contentcontainer.pk IN (SELECT space_id FROM space_membership WHERE user_id = :userId))'
+                . ' OR (contentcontainer.class = :userClass AND contentcontainer.pk IN (SELECT user_id FROM user_friendship WHERE friend_user_id = :userId))', [
                     ':visibility' => Content::VISIBILITY_PUBLIC,
                     ':userId' => $this->user->id,
                     ':spaceClass' => Space::class,
