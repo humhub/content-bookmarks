@@ -61,9 +61,9 @@ class Events
 
     public static function onStreamFilterBeforeRun($event)
     {
-        if (Yii::$app->controller->module->id == 'content-bookmarks' &&
-            Yii::$app->controller->id == 'saved' &&
-            Yii::$app->controller->action->id == 'index') {
+        if (Yii::$app->controller->module->id == 'content-bookmarks'
+            && Yii::$app->controller->id == 'saved'
+            && Yii::$app->controller->action->id == 'index') {
             // Don't display the filter on the page with already filtered contents
             return;
         }
