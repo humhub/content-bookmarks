@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.humhub.org/
  * @copyright Copyright (c) 2021 HumHub GmbH & Co. KG
@@ -33,8 +34,9 @@ class AcceptanceTester extends \AcceptanceTester
     /**
      * @param string $waitBookmarkButtonText
      */
-    public function clickWallEntryBookmark($waitBookmarkButtonText) {
-        $this->jsClick('[data-stream-entry=1] [data-toggle=dropdown]');
+    public function clickWallEntryBookmark($waitBookmarkButtonText)
+    {
+        $this->jsClick('[data-stream-entry=1] [data-bs-toggle=dropdown]');
         $this->waitForText($waitBookmarkButtonText);
         $this->jsClick('[data-stream-entry=1] [data-action-click=bookmark]');
     }

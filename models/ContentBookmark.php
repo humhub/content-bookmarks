@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.humhub.org/
  * @copyright Copyright (c) 2021 HumHub GmbH & Co. KG
@@ -13,8 +14,8 @@ use humhub\components\ActiveRecord;
  * This is the model class for table 'content_bookmark'.
  *
  * The followings are the available columns in table 'content_bookmark':
- * @property integer $user_id
- * @property integer $content_id
+ * @property int $user_id
+ * @property int $content_id
  */
 class ContentBookmark extends ActiveRecord
 {

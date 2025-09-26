@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.humhub.org/
  * @copyright Copyright (c) 2021 HumHub GmbH & Co. KG
@@ -15,7 +16,6 @@ use Yii;
  */
 class StreamViewer extends BaseStreamViewer
 {
-
     /**
      * @var string the path to Stream Action to use
      */

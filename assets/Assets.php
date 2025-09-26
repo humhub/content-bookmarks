@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.humhub.org/
  * @copyright Copyright (c) 2021 HumHub GmbH & Co. KG
@@ -33,6 +34,6 @@ class Assets extends AssetBundle
      * @inheritDoc
      */
     public $publishOptions = [
-        'forceCopy' => true
+        'forceCopy' => true,
     ];
 }
