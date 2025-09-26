@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.2.0 (July 26, 2025)
+---------------------
+- Enh #30: Migration to Bootstrap 5 for HumHub 1.18
+
+
 1.1.0 (October 29, 2024)
 ------------------------
 - Fix: Translation category for 'You didn\'t save any content yet!'
