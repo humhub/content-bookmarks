@@ -4,6 +4,7 @@ Changelog
 1.2.1 (TBD)
 -----------
 - Fix #26: Update module resources path
+- Enh #36: Improved Module Test GitHub Actions
 
 1.2.0 (July 26, 2025)
 ---------------------
