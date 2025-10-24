@@ -44,9 +44,7 @@ class BookmarkStreamQuery extends ContentContainerStreamQuery
                 ->column();
 
             if (count($bookmarkedContentIds) > 0) {
-                return array_filter($result, function ($content) use ($bookmarkedContentIds) {
-                    return in_array($content->id, $bookmarkedContentIds);
-                });
+                return array_filter($result, fn($content) => in_array($content->id, $bookmarkedContentIds));
             }
 
             return [];
