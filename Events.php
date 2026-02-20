@@ -8,6 +8,7 @@
 
 namespace humhub\modules\contentBookmarks;
 
+use humhub\helpers\ControllerHelper;
 use humhub\modules\content\widgets\WallEntryControls;
 use humhub\modules\contentBookmarks\helpers\Url;
 use humhub\modules\contentBookmarks\models\filters\BookmarksContentStreamFilter;
@@ -55,7 +56,7 @@ class Events
             'url' => Url::toSavedContent($event->sender->user),
             'icon' => 'bookmark',
             'sortOrder' => 250,
-            'isActive' => MenuLink::isActiveState('content-bookmarks', 'saved'),
+            'isActive' => ControllerHelper::isActivePath('content-bookmarks', 'saved'),
         ]));
     }
 

@@ -41,7 +41,7 @@ class BookmarkStreamFilter extends StreamQueryFilter
         // Limit to public posts when no member
         if (Yii::$app->user->isGuest) {
             $this->query->andWhere('content.visibility = :visibility', [':visibility' => Content::VISIBILITY_PUBLIC]);
-        } elseif (!Yii::$app->user->getIdentity()->canViewAllContent()) {
+        } elseif (!Yii::$app->user->getIdentity()->canManageAllContent()) {
             // Limit only if current User/Admin cannot view all content
             $this->query->andWhere('content.visibility = :visibility'
                 . ' OR content.created_by = :userId'
