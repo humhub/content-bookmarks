@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.3.0 (Unreleased)
-------------------
+1.3.0 (June 5, 2026)
+--------------------
 - Enh #40: Update for HumHub 1.19
 
 1.2.1 (TBD)
