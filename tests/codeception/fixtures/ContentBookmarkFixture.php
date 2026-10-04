@@ -8,11 +8,11 @@
 
 namespace humhub\modules\contentBookmarks\tests\codeception\fixtures;
 
-use humhub\modules\user\models\Group;
+use humhub\modules\contentBookmarks\models\ContentBookmark;
 use yii\test\ActiveFixture;
 
 class ContentBookmarkFixture extends ActiveFixture
 {
-    public $modelClass = Group::class;
+    public $modelClass = ContentBookmark::class;
     public $dataFile = '@content-bookmarks/tests/codeception/fixtures/data/content_bookmark.php';
 }

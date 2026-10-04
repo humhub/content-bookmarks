@@ -5,10 +5,9 @@
   "keywords": [
     "content","bookmarks"
   ],
-  "version": "1.2.1",
+  "version": "1.3.1",
   "humhub": {
-    "minVersion": "1.18",
-    "maxVersion": "1.18"
+    "minVersion": "1.19"
   },
   "screenshots": [
       "resources/screenshot1.png",
