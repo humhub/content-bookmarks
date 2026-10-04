@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.3.1 (Unreleased)
+------------------
+- Fix: Refined bookmark stream handling
+
 1.3.0 (June 5, 2026)
 --------------------
 - Enh #40: Update for HumHub 1.19
@@ -10,6 +14,7 @@ Changelog
 - Fix #26: Update module resources path
 - Enh #36: Improved Module Test GitHub Actions
 - Enh #37: Implemented `module-coding-standards`
+- Fix: Refined bookmark stream handling
 
 1.2.0 (July 26, 2025)
 ---------------------

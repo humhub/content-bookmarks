@@ -26,7 +26,8 @@ class BookmarkStreamQuery extends ContentContainerStreamQuery
     {
         parent::beforeApplyFilters();
         $this->removeFilterHandler(ContentContainerStreamFilter::class);
-        $this->addFilterHandler(new BookmarkStreamFilter(['user' => Yii::$app->user]));
+        // Prepend the filter so that the pinned, draft and scheduled queries cloned by other filters are restricted as well
+        $this->addFilterHandler(new BookmarkStreamFilter(['user' => $this->user]), true, true);
     }
 
     /**
