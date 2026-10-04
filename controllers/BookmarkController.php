@@ -35,7 +35,9 @@ class BookmarkController extends ContentContainerController
     {
         $content = BookmarkableContent::findOne(['id' => $id]);
 
-        if (!$content) {
+        if (!$content
+            || (int) $content->contentcontainer_id !== (int) $this->contentContainer->contentcontainer_id
+            || (!$content->isBookmarked() && !$content->canView())) {
             throw new HttpException(404, Yii::t('ContentBookmarksModule.base', 'Invalid content id given!'));
         }
 
