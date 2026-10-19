@@ -44,7 +44,8 @@ class BookmarksContentStreamFilter extends StreamQueryFilter
 
     public function isFilterActive($filter)
     {
-        return in_array($filter, $this->filters);
+        // The filters can be sent as a single string
+        return in_array($filter, (array) $this->filters);
     }
 
     protected function filterBookmarked()
