@@ -33,7 +33,9 @@ class BookmarkController extends ContentContainerController
      */
     public function actionUpdate($id)
     {
-        $content = BookmarkableContent::findOne(['id' => $id]);
+        $this->forcePostRequest();
+
+        $content = (is_string($id) && ctype_digit($id)) ? BookmarkableContent::findOne(['id' => $id]) : null;
 
         if (!$content
             || (int) $content->contentcontainer_id !== (int) $this->contentContainer->contentcontainer_id

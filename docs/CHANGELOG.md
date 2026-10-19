@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.3.2 (Unreleased)
+------------------
+- Fix #44: Bookmark toggling via POST only; Bookmarked filter with pinned content and string value; 500 error on the bookmarks page filter; Content id check
+
 1.3.1 (October 13, 2026)
 ------------------------
 - Fix: Refined bookmark stream handling

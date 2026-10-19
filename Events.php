@@ -9,6 +9,7 @@
 namespace humhub\modules\contentBookmarks;
 
 use humhub\helpers\ControllerHelper;
+use humhub\modules\content\components\ContentActiveRecord;
 use humhub\modules\content\widgets\WallEntryControls;
 use humhub\modules\contentBookmarks\helpers\Url;
 use humhub\modules\contentBookmarks\models\filters\BookmarksContentStreamFilter;
@@ -18,7 +19,6 @@ use humhub\modules\stream\widgets\WallStreamFilterNavigation;
 use humhub\modules\ui\menu\MenuLink;
 use humhub\modules\user\widgets\ProfileMenu;
 use Yii;
-use humhub\modules\content\components\ContentActiveRecord;
 
 class Events
 {
@@ -84,6 +84,7 @@ class Events
         /* @var $streamQuery WallStreamQuery */
         $streamQuery = $event->sender;
 
-        $streamQuery->addFilterHandler(BookmarksContentStreamFilter::class);
+        // Prepend the filter so that the pinned content queries cloned by other filters are restricted as well
+        $streamQuery->addFilterHandler(BookmarksContentStreamFilter::class, true, true);
     }
 }

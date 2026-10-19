@@ -9,9 +9,10 @@
 namespace humhub\modules\contentBookmarks\stream;
 
 use humhub\modules\contentBookmarks\models\ContentBookmark;
+use humhub\modules\contentBookmarks\models\filters\BookmarksContentStreamFilter;
+use humhub\modules\contentBookmarks\stream\filters\BookmarkStreamFilter;
 use humhub\modules\stream\models\ContentContainerStreamQuery;
 use humhub\modules\stream\models\filters\ContentContainerStreamFilter;
-use humhub\modules\contentBookmarks\stream\filters\BookmarkStreamFilter;
 use Yii;
 
 /**
@@ -26,6 +27,8 @@ class BookmarkStreamQuery extends ContentContainerStreamQuery
     {
         parent::beforeApplyFilters();
         $this->removeFilterHandler(ContentContainerStreamFilter::class);
+        // The bookmarks are already joined by BookmarkStreamFilter
+        $this->removeFilterHandler(BookmarksContentStreamFilter::class);
         // Prepend the filter so that the pinned, draft and scheduled queries cloned by other filters are restricted as well
         $this->addFilterHandler(new BookmarkStreamFilter(['user' => $this->user]), true, true);
     }
