@@ -24,6 +24,11 @@ class StreamViewer extends BaseStreamViewer
     /**
      * @inheritdoc
      */
+    public $streamFilterNavigation = BookmarkStreamFilterNavigation::class;
+
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         parent::init();
