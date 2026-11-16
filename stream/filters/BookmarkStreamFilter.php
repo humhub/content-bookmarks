@@ -9,9 +9,9 @@
 namespace humhub\modules\contentBookmarks\stream\filters;
 
 use humhub\modules\content\models\Content;
+use humhub\modules\content\models\stream\filters\StreamQueryFilter;
 use humhub\modules\space\models\Membership;
 use humhub\modules\space\models\Space;
-use humhub\modules\stream\models\filters\StreamQueryFilter;
 use humhub\modules\user\models\User;
 use Yii;
 

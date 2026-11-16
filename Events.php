@@ -10,14 +10,14 @@ namespace humhub\modules\contentBookmarks;
 
 use humhub\helpers\ControllerHelper;
 use humhub\modules\content\components\ContentActiveRecord;
+use humhub\modules\content\models\stream\WallStreamQuery;
+use humhub\modules\content\widgets\stream\WallStreamFilterNavigation;
 use humhub\modules\content\widgets\WallEntryControls;
 use humhub\modules\contentBookmarks\helpers\Url;
 use humhub\modules\contentBookmarks\models\filters\BookmarksContentStreamFilter;
 use humhub\modules\contentBookmarks\widgets\BookmarkLink;
-use humhub\modules\stream\models\WallStreamQuery;
-use humhub\modules\stream\widgets\WallStreamFilterNavigation;
-use humhub\modules\ui\menu\MenuLink;
 use humhub\modules\user\widgets\ProfileMenu;
+use humhub\widgets\menu\MenuLink;
 use Yii;
 
 class Events

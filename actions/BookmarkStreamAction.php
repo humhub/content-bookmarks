@@ -8,8 +8,8 @@
 
 namespace humhub\modules\contentBookmarks\actions;
 
+use humhub\modules\content\actions\ContentContainerStream;
 use humhub\modules\contentBookmarks\stream\BookmarkStreamQuery;
-use humhub\modules\stream\actions\ContentContainerStream;
 use humhub\modules\user\models\User;
 
 /**

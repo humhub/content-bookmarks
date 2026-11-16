@@ -6,10 +6,10 @@
  * @license https://www.humhub.com/licences
  */
 
+use humhub\modules\content\models\stream\WallStreamQuery;
+use humhub\modules\content\widgets\stream\WallStreamFilterNavigation;
 use humhub\modules\content\widgets\WallEntryControls;
 use humhub\modules\contentBookmarks\Events;
-use humhub\modules\stream\models\WallStreamQuery;
-use humhub\modules\stream\widgets\WallStreamFilterNavigation;
 use humhub\modules\user\widgets\ProfileMenu;
 
 /** @noinspection MissedFieldInspection */

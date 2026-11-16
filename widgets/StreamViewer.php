@@ -8,7 +8,7 @@
 
 namespace humhub\modules\contentBookmarks\widgets;
 
-use humhub\modules\stream\widgets\StreamViewer as BaseStreamViewer;
+use humhub\modules\content\widgets\stream\StreamViewer as BaseStreamViewer;
 use Yii;
 
 /**

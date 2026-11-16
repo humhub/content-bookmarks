@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.4.0 (Unreleased)
+------------------
+- Enh: Stream and menu classes of the core namespaces instead of the removed `stream` and deprecated `ui` modules
+- Enh: Tabler icons for the bookmark link
+
 1.3.2 (Unreleased)
 ------------------
 - Fix #44: Bookmark toggling via POST only; Bookmarked filter with pinned content and string value; 500 error on the bookmarks page filter; Content id check

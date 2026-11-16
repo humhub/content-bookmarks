@@ -8,7 +8,7 @@
 
 namespace humhub\modules\contentBookmarks\models\filters;
 
-use humhub\modules\stream\models\filters\StreamQueryFilter;
+use humhub\modules\content\models\stream\filters\StreamQueryFilter;
 use Yii;
 
 class BookmarksContentStreamFilter extends StreamQueryFilter

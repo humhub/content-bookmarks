@@ -40,10 +40,10 @@ class BookmarkLink extends WallEntryControlLink
 
         if ($module->isBookmarkedRecord($this->record)) {
             $this->label = Yii::t('ContentBookmarksModule.base', 'Remove from bookmarks');
-            $this->icon = 'fa-bookmark';
+            $this->icon = 'bookmark-filled';
         } else {
             $this->label = Yii::t('ContentBookmarksModule.base', 'Save as bookmark');
-            $this->icon = 'fa-bookmark-o';
+            $this->icon = 'bookmark';
         }
         $this->options = [
             'data-action-click' => 'bookmark',

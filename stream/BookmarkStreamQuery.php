@@ -8,11 +8,11 @@
 
 namespace humhub\modules\contentBookmarks\stream;
 
+use humhub\modules\content\models\stream\ContentContainerStreamQuery;
+use humhub\modules\content\models\stream\filters\ContentContainerStreamFilter;
 use humhub\modules\contentBookmarks\models\ContentBookmark;
 use humhub\modules\contentBookmarks\models\filters\BookmarksContentStreamFilter;
 use humhub\modules\contentBookmarks\stream\filters\BookmarkStreamFilter;
-use humhub\modules\stream\models\ContentContainerStreamQuery;
-use humhub\modules\stream\models\filters\ContentContainerStreamFilter;
 use Yii;
 
 /**
