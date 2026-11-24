@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.3.2 (Unreleased)
-------------------
+1.3.2 (November 24, 2026)
+-------------------------
 - Fix #44: Bookmark toggling via POST only; Bookmarked filter with pinned content and string value; 500 error on the bookmarks page filter; Content id check
 - Fix #43: Show hidden content in the bookmarks list; Remove the "Hidden" filter from the bookmarks page
 
