@@ -6,9 +6,10 @@ Changelog
 - Enh: Stream and menu classes of the core namespaces instead of the removed `stream` and deprecated `ui` modules
 - Enh: Tabler icons for the bookmark link
 
-1.3.2 (Unreleased)
-------------------
+1.3.2 (November 24, 2026)
+-------------------------
 - Fix #44: Bookmark toggling via POST only; Bookmarked filter with pinned content and string value; 500 error on the bookmarks page filter; Content id check
+- Fix #43: Show hidden content in the bookmarks list; Remove the "Hidden" filter from the bookmarks page
 
 1.3.1 (October 13, 2026)
 ------------------------
